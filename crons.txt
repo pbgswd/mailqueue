@@ -1,0 +1,10 @@
+/********************************************
+this file shows some sample crontab entry
+runs every minute on day 3 and 6 of the week
+enter it into crontab with 'crontab -e'
+* points to process_queue.sh script
+* passes argument to sh script
+*********************************************/
+$ crontab -l
+MAILTO="youremail@hostwebsite.com"
+*/1  *   *   *  3,6   /home/youraccount/mailqueue/process_queue.sh subscription
